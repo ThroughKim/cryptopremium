@@ -29,10 +29,11 @@ class CryptoTableViewCell: UITableViewCell {
         currencyPremium = UILabel()
         
         currencyName.font = UIFont.systemFont(ofSize: 14)
-        currencyPriceUpbit.font = UIFont.systemFont(ofSize: 17, weight: .light)
+        currencyPriceUpbit.font = UIFont.systemFont(ofSize: 17)
         currencyPriceUpbit.text = "₩0.0"
         currencyChange.font = UIFont.systemFont(ofSize: 15, weight: .light)
         currencyChange.text = "0.0"
+        currencyPremium.font = UIFont.systemFont(ofSize: 17)
         currencyPremium.text = "- %"
         
         self.addSubview(currencyImageView)
@@ -49,12 +50,10 @@ class CryptoTableViewCell: UITableViewCell {
         }
         currencyName.snp.makeConstraints{ make in
             make.left.equalTo(currencyImageView.snp.right).offset(15)
-//            make.centerY.equalToSuperview().offset(-13)
             make.top.equalTo(currencyImageView)
         }
         currencyPriceUpbit.snp.makeConstraints{ make in
             make.left.equalTo(currencyName)
-//            make.top.equalTo(currencyName.snp.bottom).offset(10)
             make.bottom.equalTo(currencyImageView)
         }
         currencyChange.snp.makeConstraints{ make in
@@ -80,7 +79,7 @@ class CryptoTableViewCell: UITableViewCell {
                     self.currencyPriceUpbit.text = "-"
                     return
                 }
-                guard let priceBitfinex = values["usdPrice"] else {
+                guard let pricebittrex = values["usdPrice"] else {
                     self.currencyChange.text = "- %"
                     return
                 }
@@ -88,11 +87,11 @@ class CryptoTableViewCell: UITableViewCell {
                     return
                 }
                 
-                let convertedBitfinexPrice = (priceBitfinex as! Float * exchangeRate) as NSNumber
+                let convertedbittrexPrice = (pricebittrex as! Float * exchangeRate) as NSNumber
                 
                 self.setPercentChange(current: priceUpbit, opening: openingPrice)
                 self.currencyPriceUpbit.text = priceUpbit.formattedCurrencyString
-                self.setPremiumLabel(upbit: priceUpbit, bitfinex: convertedBitfinexPrice)
+                self.setPremiumLabel(upbit: priceUpbit, bittrex: convertedbittrexPrice)
             }
         }
     }
@@ -124,13 +123,15 @@ class CryptoTableViewCell: UITableViewCell {
         return convertedUsd
     }
     
-    func setPremiumLabel(upbit: NSNumber, bitfinex: NSNumber) {
+    func setPremiumLabel(upbit: NSNumber, bittrex: NSNumber) {
         let upbit:Float = upbit as! Float
-        let bitfinex:Float = bitfinex as! Float
-        
-        let premium = (upbit - bitfinex) / bitfinex * 100
-        
-        self.currencyPremium.text = String(format: "%.1f", premium) + " %"
+        let bittrex:Float = bittrex as! Float
+        if bittrex == 0 {
+            self.currencyPremium.text = "- %"
+        } else {
+            let premium = (upbit - bittrex) / bittrex * 100
+            self.currencyPremium.text = String(format: "%.1f", premium) + " %"
+        }
     }
 
 }
