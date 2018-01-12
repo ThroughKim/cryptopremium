@@ -1,2 +1,2 @@
-Real-time Cryptocurrency ticker application
+Real-time Cryptocurrency ticker application  
 Upbit exchange price only
