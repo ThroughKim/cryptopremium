@@ -115,7 +115,7 @@ enum CurrencyType: String {
     var image: UIImage {
         switch self {
         case .btc:
-            return #imageLiteral(resourceName: "Bitcoin")
+            return #imageLiteral(resourceName: "BTC")
         case .eth:
             return #imageLiteral(resourceName: "Ethereum")
         case .ltc:

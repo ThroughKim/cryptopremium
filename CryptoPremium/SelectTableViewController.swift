@@ -53,9 +53,14 @@ class SelectTableViewController: UITableViewController {
             let currencyType = allCurrenies[indexPath.row]
             cell.currencyImageView.image = currencyType.image
             cell.currencyName.text = currencyType.name
+            cell.selectionStyle = .none
             
             if userCurrencies.contains(currencyType) {
+                tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
                 cell.accessoryType = .checkmark
+            } else {
+                tableView.deselectRow(at: indexPath, animated: false)
+                cell.accessoryType = .none
             }
         }
         
@@ -68,19 +73,16 @@ class SelectTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let row = indexPath.row
-        if let cell = tableView.cellForRow(at: indexPath) {
-            cell.isSelected = false
-            if cell.accessoryType == .checkmark {
-                userCurrencies.remove(at: userCurrencies.index(of: allCurrenies[row])!)
-                cell.accessoryType = .none
-            } else if cell.accessoryType == .none {
-                let selectedCurrency = allCurrenies[row]
-                if !userCurrencies.contains(selectedCurrency) {
-                    userCurrencies.append(allCurrenies[row])
-                }
-                cell.accessoryType = .checkmark
-            }
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        if !userCurrencies.contains(allCurrenies[row]) {
+            userCurrencies.append(allCurrenies[row])
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        userCurrencies.remove(at: userCurrencies.index(of: allCurrenies[row])!)
     }
 
 }
