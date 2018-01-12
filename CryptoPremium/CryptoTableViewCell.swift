@@ -136,7 +136,7 @@ class CryptoTableViewCell: UITableViewCell {
 
 }
 
-private extension NSNumber {
+extension NSNumber {
     var formattedCurrencyString: String? {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "ko_KR")

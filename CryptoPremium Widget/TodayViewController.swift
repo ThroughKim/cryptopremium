@@ -11,24 +11,68 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
+    @IBOutlet weak var widgetTableView: UITableView!
+    var userCurrencies:[CurrencyType] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        widgetTableView.dataSource = self
+        widgetTableView.delegate = self
+        
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.reloadTableView) , userInfo: nil, repeats: true)
+        
+        self.extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func reloadTableView() {
+        let shareDefaults = UserDefaults(suiteName: "group.CryptoPremium")
+        if let savedCurrencies = shareDefaults?.object(forKey: "userCurrencies") as? [String] {
+            userCurrencies = savedCurrencies.map{ CurrencyType(rawValue: $0)! }
+        } else {
+            userCurrencies = []
+        }
+        
+        self.widgetTableView.reloadData()
+    }
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        if activeDisplayMode == .expanded {
+            preferredContentSize = CGSize(width: 0, height: 280)
+        } else {
+            preferredContentSize = maxSize
+        }
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
         completionHandler(NCUpdateResult.newData)
+    }
+    
+}
+
+extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userCurrencies.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "currencyCell", for: indexPath)
+        
+        if let cell = tableViewCell as? CurrencyTableViewCell {
+            let currency = userCurrencies[indexPath.row]
+            cell.formatCell(withCurrencyType: currency)
+        }
+        
+        return tableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /* So far empty, but we could implement this function so that we open the App and jump to the detail, when clicked */
     }
     
 }

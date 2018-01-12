@@ -35,6 +35,10 @@ class SelectTableViewController: UITableViewController {
     @objc func done() {
         let rawValueList = userCurrencies.map{ $0.rawValue }
         UserDefaults.standard.set(rawValueList, forKey: "userCurrencies")
+        
+        let shareDefaults = UserDefaults(suiteName: "group.CryptoPremium")
+        shareDefaults?.set(rawValueList, forKey: "userCurrencies")
+        
         self.dismiss(animated: true, completion: nil)
     }
 

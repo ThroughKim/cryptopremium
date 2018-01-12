@@ -14,6 +14,7 @@
 		6A388B0C1FE21D86006BA989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A388B0A1FE21D86006BA989 /* LaunchScreen.storyboard */; };
 		6A388B141FE2E832006BA989 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A388B131FE2E832006BA989 /* CryptoTableViewCell.swift */; };
 		6A388B161FE2E8A6006BA989 /* CurrencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A388B151FE2E8A6006BA989 /* CurrencyType.swift */; };
+		B3375257AD2F1F27E89ADF8B /* Pods_CryptoPremium_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596BA58EC7369E773BE458FD /* Pods_CryptoPremium_Widget.framework */; };
 		BE54B2ADFCFA192477C19C22 /* Pods_CryptoPremium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5BEBF7837873CEB88748F /* Pods_CryptoPremium.framework */; };
 		E548A93920050F7E00B36E72 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548A93820050F7E00B36E72 /* Const.swift */; };
 		E548A93B2005126900B36E72 /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548A93A2005126900B36E72 /* SelectTableViewController.swift */; };
@@ -22,6 +23,8 @@
 		E548A9472005E5B800B36E72 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548A9462005E5B800B36E72 /* TodayViewController.swift */; };
 		E548A94A2005E5B800B36E72 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E548A9482005E5B800B36E72 /* MainInterface.storyboard */; };
 		E548A94E2005E5B800B36E72 /* CryptoPremium Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E548A9422005E5B800B36E72 /* CryptoPremium Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E548A9542005F0CF00B36E72 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548A9532005F0CF00B36E72 /* CurrencyTableViewCell.swift */; };
+		E548A9572005F74C00B36E72 /* CurrencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A388B151FE2E8A6006BA989 /* CurrencyType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,8 @@
 		0969808C08ECFCD573C1CC51 /* Pods-CryptoPremium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPremium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPremium/Pods-CryptoPremium.debug.xcconfig"; sourceTree = "<group>"; };
 		22A5BEBF7837873CEB88748F /* Pods_CryptoPremium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPremium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC41C34A07FCEF10E3AA2F2 /* Pods-CryptoPremium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPremium.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPremium/Pods-CryptoPremium.release.xcconfig"; sourceTree = "<group>"; };
+		42EEAC040530CDABD8F1051A /* Pods-CryptoPremium Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPremium Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPremium Widget/Pods-CryptoPremium Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		596BA58EC7369E773BE458FD /* Pods_CryptoPremium_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPremium_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A388AFE1FE21D86006BA989 /* CryptoPremium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoPremium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A388B011FE21D86006BA989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A388B031FE21D86006BA989 /* CryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		6A388B0D1FE21D86006BA989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A388B131FE2E832006BA989 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		6A388B151FE2E8A6006BA989 /* CurrencyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyType.swift; sourceTree = "<group>"; };
+		D96FA7DFECB8481D322AECB9 /* Pods-CryptoPremium Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPremium Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPremium Widget/Pods-CryptoPremium Widget.release.xcconfig"; sourceTree = "<group>"; };
 		E548A93820050F7E00B36E72 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		E548A93A2005126900B36E72 /* SelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
 		E548A93C2005160600B36E72 /* SelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewCell.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 		E548A9462005E5B800B36E72 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		E548A9492005E5B800B36E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E548A94B2005E5B800B36E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E548A9532005F0CF00B36E72 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		E548A9552005F44600B36E72 /* CryptoPremium Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CryptoPremium Widget.entitlements"; sourceTree = "<group>"; };
+		E548A9562005F44D00B36E72 /* CryptoPremium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoPremium.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E548A9442005E5B800B36E72 /* NotificationCenter.framework in Frameworks */,
+				B3375257AD2F1F27E89ADF8B /* Pods_CryptoPremium_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +124,7 @@
 		6A388B001FE21D86006BA989 /* CryptoPremium */ = {
 			isa = PBXGroup;
 			children = (
+				E548A9562005F44D00B36E72 /* CryptoPremium.entitlements */,
 				6A388B0D1FE21D86006BA989 /* Info.plist */,
 				E548A93820050F7E00B36E72 /* Const.swift */,
 				6A388B151FE2E8A6006BA989 /* CurrencyType.swift */,
@@ -134,6 +145,8 @@
 			children = (
 				0969808C08ECFCD573C1CC51 /* Pods-CryptoPremium.debug.xcconfig */,
 				2FC41C34A07FCEF10E3AA2F2 /* Pods-CryptoPremium.release.xcconfig */,
+				42EEAC040530CDABD8F1051A /* Pods-CryptoPremium Widget.debug.xcconfig */,
+				D96FA7DFECB8481D322AECB9 /* Pods-CryptoPremium Widget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -141,7 +154,9 @@
 		E548A9452005E5B800B36E72 /* CryptoPremium Widget */ = {
 			isa = PBXGroup;
 			children = (
+				E548A9552005F44600B36E72 /* CryptoPremium Widget.entitlements */,
 				E548A9462005E5B800B36E72 /* TodayViewController.swift */,
+				E548A9532005F0CF00B36E72 /* CurrencyTableViewCell.swift */,
 				E548A9482005E5B800B36E72 /* MainInterface.storyboard */,
 				E548A94B2005E5B800B36E72 /* Info.plist */,
 			);
@@ -153,6 +168,7 @@
 			children = (
 				22A5BEBF7837873CEB88748F /* Pods_CryptoPremium.framework */,
 				E548A9432005E5B800B36E72 /* NotificationCenter.framework */,
+				596BA58EC7369E773BE458FD /* Pods_CryptoPremium_Widget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E548A94F2005E5B800B36E72 /* Build configuration list for PBXNativeTarget "CryptoPremium Widget" */;
 			buildPhases = (
+				39BA22BE8DF2E9186BCBAE7F /* [CP] Check Pods Manifest.lock */,
 				E548A93E2005E5B800B36E72 /* Sources */,
 				E548A93F2005E5B800B36E72 /* Frameworks */,
 				E548A9402005E5B800B36E72 /* Resources */,
+				83589D25C811B5BD60B7E6D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,10 +230,20 @@
 					6A388AFD1FE21D86006BA989 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E548A9412005E5B800B36E72 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -275,6 +303,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPremium/Pods-CryptoPremium-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		39BA22BE8DF2E9186BCBAE7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoPremium Widget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		73E5CD0BB75C5309350887A4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +337,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83589D25C811B5BD60B7E6D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPremium Widget/Pods-CryptoPremium Widget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F127B13D2632E0E4779F30E6 /* [CP] Embed Pods Frameworks */ = {
@@ -336,6 +397,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E548A9542005F0CF00B36E72 /* CurrencyTableViewCell.swift in Sources */,
+				E548A9572005F74C00B36E72 /* CurrencyType.swift in Sources */,
 				E548A9472005E5B800B36E72 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +554,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CryptoPremium/CryptoPremium.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5235E257YY;
 				INFOPLIST_FILE = "$(SRCROOT)/CryptoPremium/Info.plist";
@@ -508,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CryptoPremium/CryptoPremium.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5235E257YY;
 				INFOPLIST_FILE = "$(SRCROOT)/CryptoPremium/Info.plist";
@@ -521,7 +586,9 @@
 		};
 		E548A9502005E5B800B36E72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42EEAC040530CDABD8F1051A /* Pods-CryptoPremium Widget.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CryptoPremium Widget/CryptoPremium Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5235E257YY;
 				INFOPLIST_FILE = "CryptoPremium Widget/Info.plist";
@@ -536,7 +603,9 @@
 		};
 		E548A9512005E5B800B36E72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96FA7DFECB8481D322AECB9 /* Pods-CryptoPremium Widget.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CryptoPremium Widget/CryptoPremium Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5235E257YY;
 				INFOPLIST_FILE = "CryptoPremium Widget/Info.plist";
